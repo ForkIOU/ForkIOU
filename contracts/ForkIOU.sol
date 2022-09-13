@@ -10,7 +10,7 @@ import "./ERC20Mintable.sol";
 /// @notice Contract to issue ether and ETHW IOUs to enable liquidity for ETHW on mainnet pre-merge
 contract ForkIOU is Ownable, ReentrancyGuard {
     /// @notice Difficulty threshold < 2**64 for pre-merge blocks
-    uint72 private constant DIFFICULTY_THRESHOLD = 2**64;
+    uint256 private constant DIFFICULTY_THRESHOLD = type(uint64).max;
 
     /// @notice Function permitted to run only on ethereum mainnet, both before and after merge
     modifier notEthMainnet() {
