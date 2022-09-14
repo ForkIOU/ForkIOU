@@ -5,7 +5,7 @@ https://forkiou.com/
 
 ForkIOU is a trustless ether/ETHW splitting mechanism that provides exposure to ETHW on mainnet. ETHW-IOUs exist as an ERC20 token on mainnet and can be issued pre-merge by depositing ether into the ForkIOU contract. Post-merge, ETHW-IOUs are redeemable from the contract on the ethereumPoW fork, and ether are redeemable from the contract on mainnet.  
 
-* Ether are locked in the ForkIOU contract on mainnet until after the merge (when `block.difficulty > 2**64`).
+* Ether are locked in the ForkIOU contract on mainnet until after the merge (when `block.difficulty >= 2**64`).
 * ETHW-IOUs are able to be transferred freely on-chain.
 * ETHW-IOUs can be redeemed for ETHW on the ethereumPoW chain when it is online.
 
